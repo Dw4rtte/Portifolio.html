@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio | Lucas Duarte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #f5f5dc, #f3e9dc);
+      color: #1f2937;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #4e1f00; /* marrom escuro */
+      margin-bottom: 20px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    }
+
+    h1 {
+      font-size: 2.8em;
+      color: #4e1f00;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 1.5em;
+      color: #5c2e00;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 5px;
+      transition: color 0.3s ease;
+      text-align: left;
+    }
+
+    h2:hover {
+      color: #7a3c00;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+      text-align: left;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      font-size: 1.05em;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    ul li:hover {
+      transform: translateX(6px);
+      color: #5c2e00;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.3em;
+      }
+
+      .profile-img {
+        width: 160px;
+        height: 160px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" data-aos="fade-up">
+    <img src="images/perfil linkedin.png" alt="Foto de Lucas Duarte" class="profile-img" />
+    <h1 data-aos="zoom-in">Lucas Duarte</h1>
+
+    <h2 data-aos="fade-right">Bio</h2>
+    <p data-aos="fade-left">
+      🎓 Sou estudante de Tecnologia da Informação no SENAI. Desde cedo, a curiosidade sobre como funcionam sistemas, redes e dispositivos despertou minha paixão pela tecnologia. Esse interesse me motivou a iniciar minha formação técnica em TI, onde venho adquirindo conhecimentos sólidos em infraestrutura de redes, administração de sistemas e segurança cibernética.
+    </p>
+
+    <h2 data-aos="fade-right">Habilidades Técnicas</h2>
+    <ul data-aos="fade-left">
+      <li>Visual Studio Code</li>
+      <li>Python</li>
+      <li>Microsoft Azure</li>
+      <li>AWS</li>
+      <li>Windows</li>
+      <li>Linux</li>
+    </ul>
+
+    <h2 data-aos="fade-right">Certificados</h2>
+    <ul data-aos="fade-left">
+      <li>AWS Academy Graduate: Cloud Developing</li>
+      <li>AWS Academy Graduate: Cloud Foundations</li>
+      <li>Cisco CCNA: Enterprise Networking, Security, and Automation</li>
+      <li>Cisco CCNA: Switching, Routing, and Wireless Essentials</li>
+      <li>Cisco CCNA: Introduction to Networks</li>
+      <li>Senai: Computer Network Technician</li>
+    </ul>
+  </div>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
